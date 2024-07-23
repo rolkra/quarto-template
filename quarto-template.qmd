@@ -1,0 +1,42 @@
+---
+title: "<TITLE>"
+author: "<AUTHOR>"
+date: <DATE>
+abstract: <ABSTRACT>
+format: 
+  html:
+    self-contained: true
+    toc: true
+    toc-depth: 2
+    code-fold: true
+    code-tools: true
+    code-summary: "Show R code"
+editor: visual
+---
+
+## Research Question
+
+Hypothesis: 
+
+## Setup
+
+### Coding Environment
+
+We are using Quarto as publishing system and R with a small set of R-packages
+
+```{r}
+#| output: false
+library(tidyverse)
+library(explore)
+library(patchwork)
+```
+
+The output format is a HTML document that also includes code to ensure transparency and reproducibility.
+
+### Data Sources
+
+### Data Preparation
+
+```{r}
+data |> describe_tbl()
+```
